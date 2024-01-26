@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>Ask the oracle</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button onclick="askAndReturnAnswer()">Ask me!</button>
-    <p id="repeatQuestion"></p>
-    <p id="answer"></p>
+    <div class="container">
+      <img class="image" src="img1.webp" />
+      <div class="text">
+        <p id="repeatQuestion"></p>
+        <p id="answer"></p>
+      </div>
+      <button
+        id="askButton"
+        class="button"
+        onclick="askAndReturnAnswer()"
+      ></button>
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>
