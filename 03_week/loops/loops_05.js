@@ -20,7 +20,7 @@ let average = (sum / count).toFixed(4);
 if (nNaN == 1) {
   string = " There is one input that is not a number.";
 } else if (nNaN > 1) {
-  string = " There is " + nNaN + " inputs that are not a number.";
+  string = " There are " + nNaN + " inputs that are not a number.";
 }
 alert(
   "The arithmetic average of the " +
