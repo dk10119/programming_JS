@@ -46,7 +46,7 @@ document.getElementById("answer").innerHTML =
 function askAndReturnAnswer() {
   let question = prompt("Ask me any question...");
   let questionTrimmed = question.replaceAll("?", "");
-  if (question.at(-1) != "?" || questionTrimmed.length < 4) {
+  if (!question.includes("?") || questionTrimmed.length < 4) {
     document.getElementById("repeatQuestion").innerHTML =
       "That's not a question. Ask again!";
     document.getElementById("answer").innerHTML = "";
