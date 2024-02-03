@@ -30,7 +30,7 @@ function changePrice() {
   let displayTotalPrice = document.querySelectorAll(".totalPrice"); //find the displayed price
 
   for (let i = 0; i < displayTotalPrice.length; i++) {
-    displayTotalPrice[i].textContent = totalPrice;
+    displayTotalPrice[i].textContent = totalPrice.toFixed(2);
   } // change all the displayed price
 }
 
