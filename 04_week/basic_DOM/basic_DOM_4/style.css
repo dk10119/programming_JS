@@ -68,3 +68,23 @@ img {
   font-size: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 768px) {
+body {
+  background-size: 100vh;
+}
+
+.container {
+  flex-direction: column;
+  height: 90vh;
+}
+
+.image-container {
+  height: 50vh;
+}
+
+.form-container {
+  height: 50vh;
+  overflow: auto;
+}
+}
