@@ -35,6 +35,9 @@ function playSound() {
     case 3:
       return sound3.play();
       break;
+    case 4:
+      return sound4.play();
+      break;
   }
 }
 
@@ -46,5 +49,6 @@ function updateText() {
 const sound1 = new Audio("sound1.mp3");
 const sound2 = new Audio("sound2.mp3");
 const sound3 = new Audio("sound3.mp3");
+const sound4 = new Audio("sound4.mp3");
 let input = document.querySelector("#input");
 input.addEventListener("input", updateText);

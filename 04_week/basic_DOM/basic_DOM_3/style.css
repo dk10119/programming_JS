@@ -5,6 +5,7 @@ body {
     color: green;
     font-size: 2rem;
     font-family:'Typewritter';
+    position: fixed;
 }
 
 section {
@@ -13,7 +14,7 @@ section {
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    max-width: 100vw;
+    width: 100vw;
 }
 
 .main {
