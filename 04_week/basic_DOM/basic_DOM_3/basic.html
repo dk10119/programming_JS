@@ -9,8 +9,17 @@
   <body>
     <section>
       <div class="main">
-        <div class="textField"><p id="displayText"></p></div>
-        <input type="text" id="input" placeholder="Enter something" />
+        <p id="displayText"></p>
+      </div>
+      <div class="input">
+        <input
+          type="text"
+          id="input"
+          placeholder="Start typing... "
+          autofocus
+          onfocus="this.select()"
+        />
+        <img src="typewritter.webp" alt="" />
       </div>
     </section>
     <script src="script.js"></script>

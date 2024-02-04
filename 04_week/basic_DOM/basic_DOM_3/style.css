@@ -1,45 +1,65 @@
 body {
-    background-image: url(img1.jpg);
+    background-image: url(backGround.jpeg);
+    background-color: black;
+    background-size: 100vw;
+    color: green;
+    font-size: 2rem;
+    font-family:'Typewritter';
 }
 
 section {
     display: flex;
-    justify-content: center;
-    height: 100;
-    padding-top: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 100vw;
 }
 
 .main {
-    background-color: white;
+    background-color: transparent;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40rem;
-    height: 20rem;
-    border-radius: 1rem;
-
+    width: 90%;
+    height: 32%;
 }
 
-.changeTextButton {
-    display: inline-block;
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    color: #000;
-    background: #fff;
-    line-height: 30px;
-    border-radius: 40px;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: 600;
-    box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
-    margin-top: 2rem;
+p {
+    margin: 0;
+    text-shadow: 1px 1px 10px green, 1px 1px 10px green;
+    opacity: 90%;
+    display: inline;
 }
 
-/*Button style from Copy & Paste CSS*/
+.input {
+    display: flex;
+    height: 50%;
+    width: 30%;
+    justify-content: center;
+    opacity: 30%;
+}
 
-.content {
-    font-size: 25px;
-    font-weight: 300;
+input {
+    bottom: 40%;
+    margin-left: 1.1%;
+    position: absolute;
+    font-size: 27px;
+}
+
+.textCurser {
+    animation: blinker 1s linear infinite;
+    font-size: 45px;
+    margin-left: -5px;
+}
+
+@font-face {
+    font-family: Typewritter;
+    src: url(ELEGANT\ TYPEWRITER\ Light.ttf);
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
