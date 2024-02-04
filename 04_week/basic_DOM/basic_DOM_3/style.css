@@ -1,5 +1,5 @@
 body {
-    background-image: url(backGround.jpeg);
+    background-image: url(images/backGround.jpeg);
     background-color: black;
     background-size: 100vw;
     color: green;
@@ -56,7 +56,7 @@ input {
 
 @font-face {
     font-family: Typewritter;
-    src: url(ELEGANT\ TYPEWRITER\ Light.ttf);
+    src: url(elegantTypewriter.ttf);
 }
 
 @keyframes blinker {
