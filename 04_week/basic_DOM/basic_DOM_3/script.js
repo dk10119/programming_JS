@@ -20,6 +20,12 @@ The event listener's function should:
 - Update the textContent of the displayText <div> to match the input field's value.
 - To have the display update more dynamically (as the user types), consider using the input event instead of or in addition to the change event.  */
 
+const sound1 = new Audio("sound/sound1.mp3");
+const sound2 = new Audio("sound/sound2.mp3");
+const sound3 = new Audio("sound/sound3.mp3");
+const sound4 = new Audio("sound/sound4.mp3");
+let input = document.querySelector("#input");
+
 const randomNumber = (n) => {
   return Math.floor(Math.random() * n + 1);
 };
@@ -46,9 +52,5 @@ function updateText() {
   textField.innerHTML = input.value + '<p class="textCurser">▯</p>';
   playSound();
 }
-const sound1 = new Audio("sound/sound1.mp3");
-const sound2 = new Audio("sound/sound2.mp3");
-const sound3 = new Audio("sound/sound3.mp3");
-const sound4 = new Audio("sound/sound4.mp3");
-let input = document.querySelector("#input");
+
 input.addEventListener("input", updateText);

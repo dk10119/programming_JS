@@ -17,11 +17,11 @@ function clearText() {
 } //function to clear the input field
 
 function getInput() {
-  let fruitInput = document.querySelector("#fruitInput").value; //get the input
+  let fruitInput = document.querySelector("#fruitInput").value.trim(); //get the input and trim the white spaces
 
   let li = document.createElement("li");
-  li.appendChild(document.createTextNode(fruitInput)); //create the new <li> element with the input text
-
+  // li.appendChild(document.createTextNode(fruitInput));
+  li.textContent = fruitInput; //create the new <li> element with the input text
   let fruitList = document.querySelector("#fruitList"); //get the <ul> list
 
   fruitList.appendChild(li); //add the new <li> elemenet to the <ul> list
