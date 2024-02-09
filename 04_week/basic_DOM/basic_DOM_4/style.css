@@ -69,22 +69,71 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Checkbox customizing */
+.checkBoxContainer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+}
+
+.checkBoxContainer input {
+  display: none;
+}
+
+.checkBox {
+  height: 15px;
+  width: 15px;
+  border-radius: 4px;
+  border: 1px solid red;
+  background: rgba(255, 0, 0, 0.541);
+  margin: 0.3rem;
+  padding: 2px;
+}
+
+.vCheck,
+.xCheck {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  display: none;
+}
+
+.checkBoxContainer:hover input ~ .checkBox {
+  box-shadow: 0px 0px 5px red;
+}
+
+.checkBoxContainer input:checked ~ .checkBox {
+  border: 1px solid green;
+  background: rgba(0, 128, 0, 0.55);
+}
+
+
+.checkBoxContainer:hover input:checked ~ .checkBox {
+  box-shadow: 0px 0px 5px green;
+}
+
+.checkBoxContainer input:checked ~ .checkBox .vCheck{
+  display: block;
+}
+
 @media (max-width: 768px) {
-body {
-  background-size: 100vh;
-}
+  body {
+    background-size: 100vh;
+  }
 
-.container {
-  flex-direction: column;
-  height: 90vh;
-}
+  .container {
+    flex-direction: column;
+    height: 90vh;
+  }
 
-.image-container {
-  height: 50vh;
-}
+  .image-container {
+    height: 50vh;
+  }
 
-.form-container {
-  height: 50vh;
-  overflow: auto;
-}
+  .form-container {
+    height: 50vh;
+    overflow: auto;
+  }
 }
