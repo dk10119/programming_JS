@@ -6,12 +6,20 @@ Log this object to the console.
 
 // Write your object here
 
+const person = {
+  name: "Alex",
+  age: 26,
+};
+console.log(person);
+
 // Task 2: Accessing Object Properties
 /*
 Access and log the `name` and `age` from the `person` object.
 */
 
 // Write your code here
+
+console.log(`Name: ${person.name}, age: ${person.age} `);
 
 // Task 3: Modifying Object Properties
 /*
@@ -20,6 +28,10 @@ Log the updated object.
 */
 
 // Write your code here
+
+person.age = 27;
+person.country = "Canada";
+console.log(person);
 
 // Task 4: Nested Objects
 /*
@@ -30,6 +42,15 @@ Expected outcome: "Course: JavaScript"
 
 // Write your object and code here
 
+const student = {
+  name: "Emily",
+  details: {
+    age: 22,
+    course: "JavaScript",
+  },
+};
+console.log(student);
+
 // Task 5: Deleting Properties
 /*
 From the `person` object, delete the `age` property. Log the resulting object.
@@ -37,6 +58,9 @@ Expected outcome: { name: "Alex", country: "Canada" }
 */
 
 // Write your code here
+
+delete person.age;
+console.log(person);
 
 // Task 6: Object Keys and Values
 /*
@@ -48,6 +72,9 @@ Values: Alex, Canada
 
 // Write your code here
 
+console.log(`Keys: ${Object.keys(person)}`);
+console.log(`Values: ${Object.values(person)}`);
+
 // Task 7: Using Object Methods
 /*
 Define a method inside the `person` object named `greet` that returns "Hello, my name is Alex".
@@ -56,3 +83,8 @@ Expected outcome: "Hello, my name is Alex"
 */
 
 // Modify your person object and write your method invocation here
+
+person.greet = function () {
+  console.log(`Hello, my name is ${this.name}`);
+};
+person.greet();
