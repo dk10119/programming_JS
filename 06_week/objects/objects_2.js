@@ -66,6 +66,11 @@ Test `createBook` by creating a new book object with user-provided input and log
 const createBook = (title, author, yearPublished, genres) => {
   return new Book(title, author, yearPublished, genres);
 };
+
+createBook("Angels and Demons", "Dan Brown");
+createBook("Origin", "Dan Brown");
+createBook("Digital Fortress", "Dan Brown");
+createBook("Da Vinchi Code", "Dan Brown");
 // console.log(createBook("a", "b", "c", ["d", "e", "f"]));
 
 /* Task 6
