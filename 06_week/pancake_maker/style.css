@@ -20,6 +20,20 @@ select {
   width: 100%;
 }
 
+input,
+select,
+button {
+  font-family: 'Sansita', sans-serif;
+}
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
+  background: chocolate;
+  color: white;
+  margin: 1rem 0;
+}
+
 .image-container {
   height: 100vh;
   width: 50vw;

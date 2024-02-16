@@ -2,15 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Pancake Maker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
+    <title>Pancake Maker</title>
   </head>
   <body>
     <div class="container">
@@ -23,13 +22,9 @@
         <div class="customization-section">
           <label for="type">Choose your pancake type:</label>
           <select id="type">
-            <option value="5" data-name="Classic pancake">Classic - $5</option>
-            <option value="6" data-name="Chocolate pancake">
-              Chocolate - $6
-            </option>
-            <option value="7" data-name="Blueberry pancake">
-              Blueberry - $7
-            </option>
+            <option value="5">Classic - $5</option>
+            <option value="6">Chocolate - $6</option>
+            <option value="7">Blueberry - $7</option>
           </select>
         </div>
         <div class="customization-section">
@@ -89,20 +84,23 @@
           </div>
         </div>
         <div>
-          <h1>Your details</h1>
+          <h3>Your details</h3>
           <div>
-            <label for="customerName"></label>
+            <label for="customerName">Your name</label>
             <input type="text" id="customerName" />
           </div>
-          <button>Place order</button>
+          <button>Make order</button>
         </div>
         <div class="order">
           <p>Type: <span id="order_type"></span></p>
           <p>Toppings: <span id="order_toppings"></span></p>
           <p>Extras: <span id="order_extras"></span></p>
-          <p>Customer name: <span id="customer_name"></span></p>
-          <p>Order price: <span id="order_price"></span></p>
+          <p>Name: <span id="order_name"></span></p>
+          <p>Price: <span id="order_price"></span></p>
         </div>
+        <!--         <div class="price-display">
+          <h3>Total Price: <span id="totalPrice">$5</span></h3>
+        </div> -->
       </div>
     </div>
     <script src="script.js"></script>
