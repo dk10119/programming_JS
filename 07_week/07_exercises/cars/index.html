@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cars</title>
+  </head>
+  <body>
+    <main>
+      <section class="add_car">
+        <form action="#" class="car_form">
+          <h2>Add car info:</h2>
+          <label for="license_plate">License plate: </label>
+          <input type="text" id="plate" name="plate" />
+          <label for="maker">Maker: </label>
+          <input type="text" id="maker" name="maker" />
+          <label for="model">Model: </label>
+          <input type="text" id="model" name="model" />
+          <label for="current_owner">Current owner: </label>
+          <input type="text" id="owner" name="owner" />
+          <label for="price">Price: </label>
+          <input type="number" id="price" name="price" />
+          <label for="color">Color: </label>
+          <input type="text" id="color" name="color" />
+          <button
+            id="submit"
+            style="margin-top: 2rem; width: 10rem; padding: 0.1rem"
+          >
+            Submit
+          </button>
+          <p id="error_msg"></p>
+        </form>
+      </section>
+      <section class="search_car">
+        <h2>Search car:</h2>
+      </section>
+    </main>
+    <main>
+      <section class="car_database">
+        <h2>Car database:</h2>
+        <table class="car_table">
+          <tr>
+            <th>License plate</th>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>Current owner</th>
+            <th>Price</th>
+            <th>Color</th>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
