@@ -21,6 +21,7 @@ const addRow = (arr, index) => {
 function addNewCar(event) {
   event.preventDefault();
   try {
+    document.querySelector("#error_msg").textContent = "";
     const inputs = document.querySelectorAll("input");
     let inputValues = [];
     for (input of inputs) {
@@ -28,18 +29,18 @@ function addNewCar(event) {
       if (input.value == "") throw new Error("Please fill all fields!");
     }
     cars.push(new Car(...inputValues));
-    addRow(inputValues, 0);
+    addRow(inputValues, 1);
   } catch (error) {
     document.querySelector("#error_msg").textContent = error.message;
   }
   event.target.reset();
 }
 
-function updateDatabase() {
-  for (car of cars) {
-    addRow(Object.values(car), -1);
-  }
-}
-updateDatabase();
+fetch("cars.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((car) => addRow(Object.values(car), -1));
+    cars.push(...data);
+  });
 
 document.querySelector(".car_form").addEventListener("submit", addNewCar);
