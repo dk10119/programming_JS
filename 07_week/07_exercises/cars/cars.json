@@ -118,5 +118,125 @@
         "owner": "Michael Davis",
         "price": 50000,
         "color": "Red"
+    },
+    {
+        "plate": "TUV123",
+        "maker": "Toyota",
+        "model": "Corolla",
+        "owner": "Alex Johnson",
+        "price": 20000,
+        "color": "Silver"
+    },
+    {
+        "plate": "WXY456",
+        "maker": "Honda",
+        "model": "Accord",
+        "owner": "Michelle Williams",
+        "price": 24000,
+        "color": "Black"
+    },
+    {
+        "plate": "YZA789",
+        "maker": "Ford",
+        "model": "F-150",
+        "owner": "Daniel Brown",
+        "price": 38000,
+        "color": "Blue"
+    },
+    {
+        "plate": "BCD012",
+        "maker": "Chevrolet",
+        "model": "Cruze",
+        "owner": "Jessica Taylor",
+        "price": 22000,
+        "color": "Red"
+    },
+    {
+        "plate": "EFG345",
+        "maker": "BMW",
+        "model": "3 Series",
+        "owner": "Andrew Davis",
+        "price": 45000,
+        "color": "White"
+    },
+    {
+        "plate": "HIJ678",
+        "maker": "Audi",
+        "model": "Q5",
+        "owner": "Melissa Martinez",
+        "price": 48000,
+        "color": "Gray"
+    },
+    {
+        "plate": "KLM901",
+        "maker": "Mercedes-Benz",
+        "model": "E-Class",
+        "owner": "Ryan Garcia",
+        "price": 60000,
+        "color": "Black"
+    },
+    {
+        "plate": "NOP234",
+        "maker": "Nissan",
+        "model": "Sentra",
+        "owner": "Samantha Rodriguez",
+        "price": 21000,
+        "color": "Blue"
+    },
+    {
+        "plate": "QRS567",
+        "maker": "Volkswagen",
+        "model": "Passat",
+        "owner": "Justin Kim",
+        "price": 28000,
+        "color": "Silver"
+    },
+    {
+        "plate": "TUV890",
+        "maker": "Subaru",
+        "model": "Forester",
+        "owner": "Laura Hernandez",
+        "price": 32000,
+        "color": "Green"
+    },
+    {
+        "plate": "WXY123",
+        "maker": "Hyundai",
+        "model": "Sonata",
+        "owner": "Tyler Thompson",
+        "price": 25000,
+        "color": "Red"
+    },
+    {
+        "plate": "YZA456",
+        "maker": "Kia",
+        "model": "Sorento",
+        "owner": "Olivia Nguyen",
+        "price": 30000,
+        "color": "White"
+    },
+    {
+        "plate": "BCD789",
+        "maker": "Jeep",
+        "model": "Grand Cherokee",
+        "owner": "Ethan Wilson",
+        "price": 40000,
+        "color": "Black"
+    },
+    {
+        "plate": "EFG012",
+        "maker": "Lexus",
+        "model": "IS",
+        "owner": "Grace Lee",
+        "price": 52000,
+        "color": "Blue"
+    },
+    {
+        "plate": "HIJ345",
+        "maker": "Tesla",
+        "model": "Model S",
+        "owner": "Noah Kim",
+        "price": 80000,
+        "color": "Silver"
     }
 ]

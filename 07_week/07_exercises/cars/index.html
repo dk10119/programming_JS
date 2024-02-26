@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Cars</title>
   </head>
   <body>
@@ -35,7 +39,21 @@
     </main>
     <main>
       <section class="car_database">
-        <h2>Car database:</h2>
+        <div class="car_database_header">
+          <h2>Car database:</h2>
+          <div class="search_bar">
+            <label for="search" class="material-symbols-outlined">search</label>
+            <input type="text" id="search" name="search" />
+            <select name="search_type" id="search_type">
+              <option value="plate">License plate</option>
+              <option value="maker">Maker</option>
+              <option value="model">Model</option>
+              <option value="owner">Owner</option>
+              <option value="price">Price</option>
+              <option value="color">Color</option>
+            </select>
+          </div>
+        </div>
         <table class="car_table">
           <tr>
             <th>License plate</th>
@@ -44,6 +62,12 @@
             <th>Current owner</th>
             <th>Price</th>
             <th>Color</th>
+          </tr>
+        </table>
+        <table class="car_table" id="car_table"></table>
+        <table class="car_table" id="car_table_search" style="display: none">
+          <tr>
+            <td>Empty</td>
           </tr>
         </table>
       </section>

@@ -39,6 +39,17 @@ main {
     flex-direction: column;
 }
 
+.car_database_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center
+}
+
 .car_form label {
     margin-top: 1rem;
 }
@@ -70,3 +81,7 @@ main {
     background-color: #04AA6D;
     color: white;
 }
+
+/* #car_table_search {
+    display: none;
+} */
