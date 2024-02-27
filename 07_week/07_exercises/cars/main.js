@@ -20,7 +20,8 @@ const addRow = (arr, location, index) => {
 };
 
 function addNewCar(event) {
-  event.preventDefault();
+  event.preventDefault(); //stop the page from reloading
+  //try catch here to stop the function and inject a message if field is not fill when sumbit
   try {
     document.querySelector("#error_msg").textContent = "";
     const inputs = document.querySelectorAll(".car_form > input");
@@ -30,20 +31,18 @@ function addNewCar(event) {
       if (input.value == "") throw new Error("Please fill all fields!");
     }
     cars.push(new Car(...inputValues));
-    addRow(inputValues, table, 1);
+    addRow(inputValues, table, 0);
   } catch (error) {
     document.querySelector("#error_msg").textContent = error.message;
   }
-  event.target.reset();
+  event.target.reset(); //reset the form after submit
 }
 
 function searchCar() {
   const searchTable = document.querySelector("#car_table_search");
-  const searchType = document.querySelector("#search_type").value;
-  const searchTerm = search.value.toLowerCase();
-  const result = cars.filter((car) =>
-    car[searchType].toLowerCase().includes(searchTerm)
-  );
+  const type = document.querySelector("#search_type").value;
+  const term = search.value.toLowerCase();
+  const result = cars.filter((car) => car[type].toLowerCase().includes(term));
   if (searchTerm == "") {
     searchTable.style.display = "none";
     table.style.display = "";
@@ -51,7 +50,7 @@ function searchCar() {
     table.style.display = "none";
     searchTable.style.display = "";
   }
-  searchTable.innerHTML = "";
+  searchTable.innerHTML = ""; //delete the whole table before display new one
   result.forEach((car) => addRow(Object.values(car), searchTable, -1));
   if (result.length == 0) addRow(["Not found"], searchTable, -1);
 }
@@ -61,7 +60,7 @@ fetch("cars.json")
   .then((data) => {
     data.forEach((car) => addRow(Object.values(car), table, -1));
     cars.push(...data);
-  });
+  }); //display a preloaded list of cars from JSON file
 
 document.querySelector(".car_form").addEventListener("submit", addNewCar);
 document.querySelector(".search_bar").addEventListener("input", searchCar);

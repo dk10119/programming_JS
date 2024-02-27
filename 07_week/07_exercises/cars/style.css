@@ -1,3 +1,4 @@
+/* universal and section container */
 * {
     padding: 0;
     margin: 0;
@@ -29,6 +30,7 @@ main {
     flex: 1;
 }
 
+/* add car form section */
 #error_msg {
     color: red;
     font-size: 0.8rem;
@@ -39,6 +41,17 @@ main {
     flex-direction: column;
 }
 
+.car_form label {
+    margin-top: 1rem;
+}
+
+#submit {
+    margin-top: 2rem;
+    width: 10rem;
+    padding: 0.1rem;
+}
+
+/* database section */
 .car_database_header {
     display: flex;
     justify-content: space-between;
@@ -50,10 +63,12 @@ main {
     align-items: center
 }
 
-.car_form label {
-    margin-top: 1rem;
+.search_bar input,
+.search_bar select {
+    margin-left: 0.2rem;
 }
 
+/* database section table */
 .car_table {
     table-layout: fixed;
     width: 100%;
@@ -81,7 +96,3 @@ main {
     background-color: #04AA6D;
     color: white;
 }
-
-/* #car_table_search {
-    display: none;
-} */

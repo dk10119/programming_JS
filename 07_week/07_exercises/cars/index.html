@@ -27,12 +27,8 @@
           <input type="number" id="price" name="price" />
           <label for="color">Color: </label>
           <input type="text" id="color" name="color" />
-          <button
-            id="submit"
-            style="margin-top: 2rem; width: 10rem; padding: 0.1rem"
-          >
-            Submit
-          </button>
+          <button id="submit">Submit</button>
+          <!-- error message content injected from JS if any field is not fill when submit -->
           <p id="error_msg"></p>
         </form>
       </section>
@@ -54,6 +50,7 @@
             </select>
           </div>
         </div>
+        <!-- this is header table -->
         <table class="car_table">
           <tr>
             <th>License plate</th>
@@ -64,7 +61,9 @@
             <th>Color</th>
           </tr>
         </table>
+        <!-- this is car database table. content inject from JS -->
         <table class="car_table" id="car_table"></table>
+        <!-- this is search result table. content inject from JS -->
         <table class="car_table" id="car_table_search" style="display: none">
           <tr>
             <td>Empty</td>
