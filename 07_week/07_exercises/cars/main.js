@@ -43,7 +43,7 @@ function searchCar() {
   const type = document.querySelector("#search_type").value;
   const term = search.value.toLowerCase();
   const result = cars.filter((car) => car[type].toLowerCase().includes(term));
-  if (searchTerm == "") {
+  if (term == "") {
     searchTable.style.display = "none";
     table.style.display = "";
   } else {
