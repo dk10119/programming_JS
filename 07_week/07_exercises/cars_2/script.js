@@ -1,3 +1,4 @@
+"use strict";
 const addCarForm = document.querySelector("#add_car_form");
 const cars = [];
 
@@ -22,7 +23,20 @@ const addCar = (event) => {
   const color = document.querySelector("#color").value;
   const newCar = new Car(license, maker, model, owner, price, color);
   cars.push(newCar);
-  console.table(cars);
+  event.target.reset();
+  displayTable();
+};
+
+const displayTable = () => {
+  const table = document.querySelector("#cars_table");
+  table.innerHTML = table.rows[0].innerHTML;
+  cars.forEach((car) => {
+    const row = table.insertRow(-1);
+    Object.values(car).forEach((text) => {
+      const cell = row.insertCell(-1);
+      cell.textContent = text;
+    });
+  });
 };
 
 addCarForm.addEventListener("submit", addCar);
