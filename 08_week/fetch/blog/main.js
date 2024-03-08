@@ -20,6 +20,7 @@ const displayData = (data) => {
     const postElement = document.createElement("div");
     postElement.innerHTML = `
         <h2>${post.title}</h2>
+        <h5>${post.userId}</h5>
         <p>${post.body}</p>
         `;
     container.appendChild(postElement);

@@ -13,6 +13,10 @@ body {
     font-family: var(--font)
 }
 
+h1 {
+    margin: 2.5rem 0 0 2.5rem;
+}
+
 .blogs_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -25,4 +29,13 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     background-color: rgb(173, 215, 201);
+}
+
+.blogs_container div h2 {
+    margin-bottom: 1rem;
+}
+
+.blogs_container div:hover {
+    background-color: rgb(200, 244, 228);
+    box-shadow: 0 0 20px rgb(101, 101, 101);
 }
