@@ -4,10 +4,10 @@ Hello world! This is my learning repo for the Javascript course at Business Coll
 
 ![Picture of a fox](./reference/foxes4ev.png)
 
-> Hi Margit 👋 thank you for the wonderful journey
+> Hi Margit 👋 thank you for the wonderful course
 > foxes4ev
 
-## Some projects I did during the study
+### Some projects I did during the study
 
 - Country Info: [Link](https://alextran.dev/country_info) [Repo](https://github.com/dk10119/personal_projects/tree/main/country_info)
 - Cars database [Link](https://alextran.dev/cars_database) [Repo](https://github.com/dk10119/personal_projects/tree/main/cars_database)
@@ -16,7 +16,7 @@ Hello world! This is my learning repo for the Javascript course at Business Coll
 - Ask the oracle [Link](https://alextran.dev/ask_the_oracle) [Repo](https://github.com/dk10119/personal_projects/tree/main/ask_the_oracle)
 - Typewriter [Link](https://alextran.dev/typewriter) [Repo](https://github.com/dk10119/personal_projects/tree/main/typewriter)
 
-## Weekly assignment
+### Weekly assignment
 
 1. Week 1:
 
